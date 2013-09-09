@@ -8,7 +8,7 @@ var config = {};
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // Gekko currently only supports Exponential Moving Averages
-config.tradingMethod =  'Exponential Moving Averages';
+config.tradingMethod =  'Whale Hunt';
 
 // Exponential Moving Averages settings:
 config.EMA = {
@@ -24,6 +24,14 @@ config.EMA = {
   sellTreshold: -0.25,
   buyTreshold: 0.25
 };
+
+config.whale{
+  interval: 1,  // in minutes
+  candles: 10,  // amount of candles to check while searching for the last maximum
+  // the differance in price compared to the maximum
+  sellTreshold: -5
+  buyTreshold: 5
+}
 
 // Monitor the live market
 config.normal = {
