@@ -24,7 +24,7 @@ config.EMA = {
   buyTreshold: 0.25
 };
 
-config.whale{
+config.whale = {
   interval: 1,  // in minutes
   candles: 10,  // amount of candles to check while searching for the last maximum
   // the differance in price compared to the maximum
