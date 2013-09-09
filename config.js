@@ -7,7 +7,6 @@ var config = {};
 //                           NORMAL ZONE
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-// Gekko currently only supports Exponential Moving Averages
 config.tradingMethod =  'Whale Hunt';
 
 // Exponential Moving Averages settings:
