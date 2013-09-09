@@ -41,7 +41,7 @@ var util = {
     return moment.format('X') * 1000 * 1000;
   },
   intervalsAgo: function(amount) {
-    return moment().subtract('minutes', config.EMA.interval * amount);
+    return moment().subtract('minutes', config.whale.interval * amount);
   },
   average: function(list) {
     var total = _.reduce(list, function(m, n) { return m + n }, 0);
